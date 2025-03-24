@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Century-Gothic';
+    src: url(/assets/fonts/GOTHIC.TTF);
+
+}
+
+* {
+    font-family: 'Century-Gothic';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-color: #b1a501;
+}
+
+body {
+    background-image: url(/assets/images/background-index.webp);
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-position: 18% 0;
+}
+
+footer {
+    margin-top: 10%;
+    background-color: #000;
+    height: 30vh;
+
+    & p {
+        color: #b1a501;
+    }
+}
+
+@media only screen and (max-width : 900px) {
+
+    
+
+    header {
+
+        & h2 {
+            background-color: #000000;
+            text-align: center;
+            color: var(--first-color);
+            padding: 5% 0;
+            border-bottom: var(--first-color) solid 5px;
+            
+        }
+    }
+
+    .wsp-icono-fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 0 5% 5% 0;
+        z-index: 100;
+        background-color: #31f700;
+        padding: 3%;
+        border-radius: 50%;
+
+        & img {
+            width: 3em;
+        }
+    }
+
+
+    section {
+
+        & .ultranashe {
+            padding: .5%;
+
+            background: rgba(0, 0, 0, 0);
+            background: linear-gradient(0deg, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%);
+
+
+            & h1 {
+                margin: 80% 0 .5em 0;
+                padding-left: 5%;
+                font-size: 2.3em;
+                color: #fff
+            }
+        }
+
+        & .catalogo-linea-black {
+
+            margin: 12% 0;
+            padding: 0 5%;
+	        display: flex;
+	        align-items: center;
+	        justify-content: space-between;
+	        border-radius: 0 50px 0 0;
+
+            & h4 {
+                font-size: 1.5em;
+                color: #000;
+            }
+    
+            & .linea-black {
+                height: 2px;
+                width: 65%;
+                background-color: #000;
+            }
+        }
+
+        & .container-cards-perfumes {
+            padding: 2%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2%;
+    
+        }
+    
+            & article {
+                width: 100%;
+                height: 21em;
+                background-color: #fafafa;
+                border-bottom: var(--first-color) solid 5px;   
+            }
+    
+                & img {
+                    width: 100%;
+                }
+    
+                & .container-card-text {
+                    display: flex;
+                    flex-direction: column;
+                    
+                    width: 100%;
+    
+                    padding-left: 5%;
+    
+                    & h2 {
+                        margin-top: 1em;
+                        white-space: wrap;
+                        overflow: hidden;
+                        font-size: 1.3em;
+                        font-weight: 200;
+                    }
+    
+                    & p {
+                        margin-top: 10%;
+                        font-size: 1.4em;
+                        font-weight: 800;
+                    }
+                }
+    }
+}
+
