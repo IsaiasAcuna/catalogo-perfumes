@@ -15,18 +15,125 @@
     --first-color: #b1a501;
 }
 
-body {
-    background-image: url(/assets/images/background-index.webp);
-    background-size: 100vh;
-    background-repeat: no-repeat;
-    background-position: 18% 0;
+
+
+header {
+
+    & h2 {
+        background-color: #000000;
+        text-align: center;
+        color: var(--first-color);
+        padding: 2% 0;
+        border-bottom: var(--first-color) solid 5px;
+        
+    }
+}
+
+main {
+
+    & .wsp-icono-fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 0 5% 5% 0;
+        z-index: 100;
+        background-color: #31f700;
+        padding: 2%;
+        border-radius: 50%;
+
+        & img {
+            width: 2.6em;
+        }
+    }
+}
+
+
+section {
+
+    & .ultranashe {
+        
+
+        & h1 {
+            margin: 5% 0;
+            padding-left: 5%;
+            font-size: 2.3em;
+            color: #000000;
+        }
+    }
+
+    & .catalogo-linea-black {
+
+        margin: 3% 0;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 0 50px 0 0;
+
+        & h4 {
+            font-size: 2.5em;
+            color: #000;
+        }
+
+        & .linea-black {
+            height: 3px;
+            width: 80%;
+            background-color: #000;
+        }
+    }
+
+    & .container-cards-perfumes {
+        
+        
+        padding: 1em 2%;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2em;
+
+        & article {
+            width: 250px;
+            height: 25em;
+            background-color: #ebebeb;
+            border-bottom: var(--first-color) solid 5px;   
+        }
+
+        & img {
+            width: 250px;
+        }
+
+        & .container-card-text {
+            display: flex;
+            flex-direction: column;
+                
+            width: 100%;
+
+            padding-left: 5%;
+
+            & h2 {
+                margin-top: 1em;
+                white-space: wrap;
+                overflow: hidden;
+                font-size: 1.3em;
+                font-weight: 200;
+            }
+
+            & p {
+                margin-top: 5%;
+                font-size: 1.4em;
+                font-weight: 800;
+                letter-spacing: 2px;
+            }
+        }
+    }
 }
 
 footer {
     margin-top: 8%;
     padding: 5% 0;
     background-color: #1f1f1f;
-    height: auto;
+    
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -35,8 +142,8 @@ footer {
     color: #fff;
 
     & i {
+        margin-bottom: 4%;
         font-size: 3em;
-        margin: 10% 0;
     }
 
     & h3 {
@@ -78,6 +185,13 @@ footer {
 }
 
 @media only screen and (max-width : 900px) {
+
+    body {
+        background-image: url(/assets/images/background-index.webp);
+        background-size: 100vh;
+        background-repeat: no-repeat;
+        background-position: 18% 0;
+    }
 
     header {
 
