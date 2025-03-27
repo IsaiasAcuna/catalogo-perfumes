@@ -92,7 +92,6 @@ footer {
     }
 
     main {
-        border: #31f700 solid 2px;
 
         & .wsp-icono-fixed {
             position: fixed;
@@ -149,11 +148,11 @@ footer {
 
         & .container-cards-perfumes {
             
-            border: blue solid 3px ;
+            
             padding: 1em 2%;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 2%;
+            gap: 1em;
 
             & article {
                 width: 100%;
